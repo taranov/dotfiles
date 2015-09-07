@@ -120,6 +120,8 @@ fi
 #export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 #[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
-source ~/.git-completion.bash
+#source ~/.git-completion.bash
+source /usr/share/bash-completion/completions/git
+complete -o default -o nospace -F _git g
 
 source ~/.profile

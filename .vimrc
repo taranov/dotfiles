@@ -158,7 +158,7 @@ else
      endif
 endif
 
-colorscheme peachpuff
+colorscheme vividchalk
 
 " No icky toolbar, menu or scrollbars in the GUI
 if has('gui')
@@ -592,3 +592,8 @@ nmap <S-F1> :set<Space>hls!<CR>
 
 " q: sucks
 nmap q: :q
+
+set nu
+set sw=4
+set sts=4
+let g:fuzzy_ignore = "gems/*"

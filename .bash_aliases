@@ -24,7 +24,7 @@ alias tm="tmux new-session \; \
 alias pwg='pwgen -cnyB 14 14 | while read PASS; do echo -n -e "$PASS\t"; echo -n "$PASS" | md5sum | cut -f1 -d" "; done'
 
 alias folio='ssh -p 42222 msh@velton.folioplus.com'
-alias drill='ssh misha@drillex.com.ua'
+alias drill='ssh misha@gw.drillex.com.ua'
 
 # Easy extract
  extract () {
@@ -53,6 +53,8 @@ alias drill='ssh misha@drillex.com.ua'
      mkdir -p -v $1
      cd $1
  }
+
+alias view="gnome-open"
 
 #Для создания временного общего файлового сервера, который дает доступ ко всему в текущем каталоге, поэтому будьте осторожны с ним, кстати для него требуются дополнительные IP-псевдонимы приведенные ниже:
 alias share='hostip && echo "To end sharing, press Ctrl + C - server on port 56840" && python -m SimpleHTTPServer 56840'
