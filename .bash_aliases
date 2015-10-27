@@ -12,6 +12,7 @@ alias get='git '
 alias cgn='cd /home/msh/proj/cognition'
 alias cgns='cd /home/msh/proj/cognition && rails server'
 alias work='cd /home/msh/proj/'
+alias wsps='cd ~/bin/Worksnaps/bin/ && ./run.sh'
 
 alias tml="tmux list-sessions"
 alias tma="tmux attach-session"
