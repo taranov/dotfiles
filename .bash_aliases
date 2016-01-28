@@ -11,6 +11,10 @@ alias get='git '
 
 alias cgn='cd /home/msh/proj/cognition'
 alias cgns='cd /home/msh/proj/cognition && rails server'
+alias lat='cd /home/msh/proj/latestca'
+alias lats='cd /home/msh/proj/latestca && rails server'
+alias slot='cd /home/msh/proj/casinoslots'
+alias slots='cd /home/msh/proj/casinoslots && rails server'
 alias work='cd /home/msh/proj/'
 alias wsps='cd ~/bin/Worksnaps/bin/ && ./run.sh'
 
@@ -62,3 +66,4 @@ alias share='hostip && echo "To end sharing, press Ctrl + C - server on port 568
 
 #Проверить внешний IP:
 alias hostip="wget http://checkip.dyndns.org/ -O - -o /dev/null | cut -d: -f 2 | cut -d\< -f 1"
+
