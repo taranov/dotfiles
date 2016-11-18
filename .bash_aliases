@@ -9,14 +9,14 @@ alias gx='gitx --all'
 alias got='git '
 alias get='git '
 
-alias cgn='cd /home/msh/proj/cognition'
-alias cgns='cd /home/msh/proj/cognition && rails server'
 alias lat='cd /home/msh/proj/latestca'
 alias lats='cd /home/msh/proj/latestca && rails server'
 alias slot='cd /home/msh/proj/casinoslots'
 alias slots='cd /home/msh/proj/casinoslots && rails server'
 alias work='cd /home/msh/proj/'
 alias wsps='cd ~/bin/Worksnaps/bin/ && ./run.sh'
+alias cd..='cd ..'
+
 
 alias tml="tmux list-sessions"
 alias tma="tmux attach-session"
@@ -28,8 +28,55 @@ alias tm="tmux new-session \; \
 
 alias pwg='pwgen -cnyB 14 14 | while read PASS; do echo -n -e "$PASS\t"; echo -n "$PASS" | md5sum | cut -f1 -d" "; done'
 
-alias folio='ssh -p 42222 msh@velton.folioplus.com'
+alias folio='ssh -p 42222 msh@82.117.228.52'
 alias drill='ssh misha@gw.drillex.com.ua'
+
+
+#Globalrevgen
+ grg() {
+    if [ -z "$@" ]; then
+          cd ~/proj/globalrevgen
+    else
+          cd ~/proj/globalrevgen && rails $1
+    fi
+}
+
+#ADS Propeller
+ ads() {
+    if [ -z "$@" ]; then
+          cd ~/proj/ads-propeller
+    else
+          cd ~/proj/ads-propeller && rails $1
+    fi
+}
+
+#Latestca
+ lcb() {
+    if [ -z "$@" ]; then
+          cd ~/proj/latestca
+    else
+          cd ~/proj/latestca && rails $1
+    fi
+}
+
+#Cognition
+ cog() {
+    if [ -z "$@" ]; then
+          cd ~/proj/cognition
+    else
+          cd ~/proj/cognition && rails $1
+    fi
+}
+
+#Games and Casino
+ gac() {
+    if [ -z "$@" ]; then
+          cd ~/proj/gamesandcasino
+    else
+          cd ~/proj/gamesandcasino && rails $1
+    fi
+}
+
 
 # Easy extract
  extract () {
